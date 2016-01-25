@@ -31,8 +31,8 @@ public class SMSActivity extends AppCompatActivity {
     }
 
     protected void sendSMSMessage() {
-        String phoneNo = txtPhoneNumber.getText().toString();
-        String message = txtMessageContent.getText().toString();
+        String phoneNo = txtPhoneNumber.getText().toString().trim();
+        String message = txtMessageContent.getText().toString().trim();
 
         Intent intent = new Intent(Intent.ACTION_VIEW);
         intent.putExtra("address", phoneNo);
