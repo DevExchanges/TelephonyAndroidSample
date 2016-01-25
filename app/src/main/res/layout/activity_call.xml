@@ -7,6 +7,7 @@
 
     <EditText
         android:id="@+id/txt_phone"
+        android:hint="Input a phone number here"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="phone" />
